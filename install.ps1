@@ -38,7 +38,7 @@ foreach ($p in @($Root, $DataDir, $ZipPath, "C:\jiating-jiankang")) {
 
 Write-Host "[3/7] Downloading zip ..." -ForegroundColor Yellow
 $nocache = Get-Random
-$ZipUrl  = "https://raw.githubusercontent.com/AIBlockBrain/fh-portable-download/main/%E5%AE%B6%E5%BA%AD%E5%81%A5%E5%BA%B7%E7%B3%BB%E7%BB%9F-Windows%E4%BE%BF%E6%90%BA%E7%89%88.zip?n=$nocache"
+$ZipUrl  = "https://raw.githubusercontent.com/AIBlockBrain/fh-portable-download/main/%E5%AE%B6%E5%BA%AD%E5%81%A5%E5%BA%B7Windows%E4%BE%BF%E6%90%BA%E7%89%88.zip?n=$nocache"
 try {
     Invoke-WebRequest -Uri $ZipUrl -OutFile $ZipPath -UseBasicParsing
 } catch {
